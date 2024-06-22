@@ -3,7 +3,63 @@
    <head>
       <meta charset="UTF-8" />
       <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <link rel="preconnect" href="https://fonts.googleapis.com" />
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+      <link
+         href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
+         rel="stylesheet"
+      />
+      <link rel="stylesheet" href="style.css" />
       <title>Exercício Tabela</title>
    </head>
-   <body></body>
+   <body>
+      <div class="container">
+         <header>
+            <h1>Cadastro de contatos</h1>
+         </header>
+         <form id="form">
+            <div class="form-content">
+               <label for="name">Nome:</label>
+               <input
+                  type="text"
+                  name="name"
+                  id="name"
+                  required
+                  placeholder="Digite seu nome"
+               />
+            </div>
+
+            <div class="form-content">
+               <label for="contact">Telefone:</label>
+               <input
+                  type="tel"
+                  name="contact"
+                  id="contact"
+                  minlength="9"
+                  maxlength="12"
+                  required
+                  placeholder="Digite seu telefone"
+               />
+            </div>
+
+            <button type="submit">Cadastrar</button>
+         </form>
+
+         <table cellspacing="0">
+            <thead>
+               <tr>
+                  <th>Nome</th>
+                  <th>Telefone</th>
+               </tr>
+            </thead>
+
+            <tbody>
+               <tr>
+                  <td>Keyla</td>
+                  <td>(85) 99917-1800</td>
+               </tr>
+            </tbody>
+         </table>
+      </div>
+   </body>
 </html>
